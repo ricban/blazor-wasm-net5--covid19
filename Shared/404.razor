@@ -7,6 +7,11 @@
             <h1>404 - PAGE NOT FOUND</h1>
             <h5>Sorry, there's nothing at this address.</h5>
         </div>
-        <Hyperlink Href="/" Target="_self" Class="btn btn-warning">BACK TO HOMEPAGE</Hyperlink>
+        <Hyperlink Href="@Path" Target="_self" Class="btn btn-warning">BACK TO HOMEPAGE</Hyperlink>
     </div>
 </div>
+
+@code {
+    [Parameter]
+    public string Path { get; set; } = "/";
+}
